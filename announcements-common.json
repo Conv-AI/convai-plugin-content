@@ -1,0 +1,105 @@
+{
+    "version": "1.0",
+    "lastUpdated": "2025-10-14T12:00:00Z",
+    "announcements": [
+        {
+            "id": "convai-35-release",
+            "type": "update",
+            "title": "Convai 3.5 - Major Platform Update Available",
+            "description": "Enhanced AI capabilities, improved performance, and expanded language support now available across all platforms",
+            "url": "https://docs.convai.com/releases/3.5",
+            "thumbnailUrl": "",
+            "date": "2025-10-10T10:00:00Z",
+            "priority": 1,
+            "tags": [
+                "release",
+                "update",
+                "ai"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "aes-2025-announcement",
+            "type": "news",
+            "title": "Visit Convai at AES 2025",
+            "description": "Join us at the Augmented Enterprise Summit 2025. Booth #0000, South Hall",
+            "url": "https://convai.com/events/aes-2025",
+            "thumbnailUrl": "",
+            "date": "2025-10-08T09:00:00Z",
+            "priority": 2,
+            "tags": [
+                "event",
+                "conference",
+                "aes"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "documentation-update-oct",
+            "type": "blog",
+            "title": "New Documentation Portal Launched",
+            "description": "Comprehensive guides, API references, and video tutorials now available in our redesigned documentation portal",
+            "url": "https://docs.convai.com",
+            "thumbnailUrl": "",
+            "date": "2025-10-05T14:00:00Z",
+            "priority": 3,
+            "tags": [
+                "documentation",
+                "tutorial"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "voice-cloning-beta",
+            "type": "feature",
+            "title": "Real-time Voice Cloning Now in Beta",
+            "description": "Clone character voices with just 30 seconds of audio. Available for all supported platforms",
+            "url": "https://docs.convai.com/features/voice-cloning",
+            "thumbnailUrl": "",
+            "date": "2025-10-01T08:00:00Z",
+            "priority": 1,
+            "tags": [
+                "feature",
+                "voice",
+                "beta"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "3.5.0",
+            "maxVersion": ""
+        },
+        {
+            "id": "youtube-tutorial-series",
+            "type": "youtube",
+            "title": "Getting Started Tutorial Series",
+            "description": "Watch our comprehensive video series covering everything from installation to advanced features",
+            "url": "https://www.youtube.com/@convai",
+            "thumbnailUrl": "",
+            "date": "2025-09-28T10:00:00Z",
+            "priority": 4,
+            "tags": [
+                "tutorial",
+                "video",
+                "beginner"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        }
+    ]
+}

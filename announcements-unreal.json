@@ -1,0 +1,129 @@
+{
+    "version": "1.0",
+    "lastUpdated": "2025-10-14T12:00:00Z",
+    "announcements": [
+        {
+            "id": "unreal-plugin-352",
+            "type": "update",
+            "title": "Unreal Engine Plugin v3.5.2 Released",
+            "description": "Performance improvements, UE5.5 support, and enhanced Blueprint nodes now available on Marketplace",
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK/releases/tag/v3.5.2",
+            "thumbnailUrl": "",
+            "date": "2025-10-12T09:00:00Z",
+            "priority": 1,
+            "tags": [
+                "release",
+                "unreal",
+                "plugin"
+            ],
+            "targetPlatforms": [
+                "unreal"
+            ],
+            "minVersion": "5.0.0",
+            "maxVersion": ""
+        },
+        {
+            "id": "ue5-nanite-support",
+            "type": "feature",
+            "title": "UE5.4+ Nanite Support for Character Meshes",
+            "description": "Full Nanite virtualized geometry support for ultra-detailed character models with improved performance",
+            "url": "https://docs.convai.com/unreal/nanite-support",
+            "thumbnailUrl": "",
+            "date": "2025-10-08T15:00:00Z",
+            "priority": 1,
+            "tags": [
+                "unreal",
+                "nanite",
+                "feature",
+                "ue5"
+            ],
+            "targetPlatforms": [
+                "unreal"
+            ],
+            "minVersion": "5.4.0",
+            "maxVersion": ""
+        },
+        {
+            "id": "blueprint-nodes-expansion",
+            "type": "update",
+            "title": "50+ New Blueprint Nodes Added",
+            "description": "Expanded Blueprint API with advanced conversation control, emotion management, and animation synchronization",
+            "url": "https://docs.convai.com/unreal/blueprint-api",
+            "thumbnailUrl": "",
+            "date": "2025-10-01T11:00:00Z",
+            "priority": 2,
+            "tags": [
+                "unreal",
+                "blueprint",
+                "api"
+            ],
+            "targetPlatforms": [
+                "unreal"
+            ],
+            "minVersion": "5.1.0",
+            "maxVersion": ""
+        },
+        {
+            "id": "metahuman-integration-guide",
+            "type": "blog",
+            "title": "MetaHuman Integration Best Practices",
+            "description": "Complete guide for integrating Convai with Epic's MetaHuman characters, including lip sync and facial animations",
+            "url": "https://docs.convai.com/unreal/metahuman-guide",
+            "thumbnailUrl": "",
+            "date": "2025-09-25T10:00:00Z",
+            "priority": 3,
+            "tags": [
+                "unreal",
+                "metahuman",
+                "tutorial"
+            ],
+            "targetPlatforms": [
+                "unreal"
+            ],
+            "minVersion": "5.0.0",
+            "maxVersion": ""
+        },
+        {
+            "id": "ue5-sample-project",
+            "type": "youtube",
+            "title": "UE5 Sample Project Walkthrough",
+            "description": "Video tutorial showcasing the complete UE5 sample project with advanced AI character implementations",
+            "url": "https://www.youtube.com/@convai/ue5-sample",
+            "thumbnailUrl": "",
+            "date": "2025-09-20T14:00:00Z",
+            "priority": 2,
+            "tags": [
+                "tutorial",
+                "unreal",
+                "sample",
+                "video"
+            ],
+            "targetPlatforms": [
+                "unreal"
+            ],
+            "minVersion": "5.3.0",
+            "maxVersion": ""
+        },
+        {
+            "id": "lumen-optimization-guide",
+            "type": "blog",
+            "title": "Optimizing Convai with Lumen Global Illumination",
+            "description": "Performance optimization techniques for using Convai characters in Lumen-lit environments",
+            "url": "https://docs.convai.com/unreal/lumen-optimization",
+            "thumbnailUrl": "",
+            "date": "2025-09-15T10:00:00Z",
+            "priority": 4,
+            "tags": [
+                "unreal",
+                "lumen",
+                "optimization",
+                "ue5"
+            ],
+            "targetPlatforms": [
+                "unreal"
+            ],
+            "minVersion": "5.3.0",
+            "maxVersion": ""
+        }
+    ]
+}
