@@ -1,99 +1,32 @@
 {
     "version": "1.0",
-    "lastUpdated": "2025-10-14T12:00:00Z",
+    "lastUpdated": "2025-11-15T12:00:00Z",
     "changelogs": [
         {
-            "id": "unreal-352",
-            "version": "3.5.2",
-            "date": "2025-10-12T09:00:00Z",
+            "id": "unreal-400-beta2",
+            "version": "4.0.0-beta.2",
+            "date": "2025-11-15T10:00:00Z",
             "changes": [
-                "UE 5.5 compatibility verified and officially supported",
-                "40% performance improvement in multi-character conversation scenes",
-                "Fixed crash on editor shutdown when multiple AI characters are active",
-                "Enhanced Editor Configuration Window with improved theme support",
-                "New sample maps: FirstPersonDemo, ThirdPersonRPG, OpenWorldShowcase",
-                "Improved WebRTC audio quality with 48kHz sample rate support",
-                "Memory leak fixes in UConvaiChatbotComponent async operations",
-                "Blueprint node documentation expanded with detailed tooltips",
-                "Reduced plugin package size by 25% through asset optimization"
+                "Added Editor Login Screen and Dashboard for seamless authentication and project management",
+                "Enhanced audio quality with improved echo cancellation and noise reduction algorithms",
+                "Initial viseme-based lip sync support using FaceSync component for more accurate facial animations",
+                "Fixed F10 Settings menu functionality and improved UI responsiveness",
+                "Editor UI improvements with enhanced navigation, better visual feedback, and streamlined workflows"
             ],
-            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK/releases/tag/v3.5.2",
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.2",
             "targetPlatforms": [
                 "unreal"
             ]
         },
         {
-            "id": "unreal-351",
-            "version": "3.5.1",
-            "date": "2025-09-28T10:00:00Z",
+            "id": "unreal-400-beta1",
+            "version": "4.0.0-beta.1",
+            "date": "2025-11-06T10:00:00Z",
             "changes": [
-                "Critical fix: Resolved hot-reload crash in UE5.4 editor",
-                "Audio quality improvements for long-duration conversations (30+ minutes)",
-                "WebRTC stability enhancements for network interruptions",
-                "Blueprint debugging tools for AI conversation flow visualization",
-                "Performance optimizations for Level Streaming and World Partition",
-                "Improved character persistence across level transitions",
-                "Fixed lip sync timing issues with high frame rate animations"
+                "Initial WebRTC integration for real-time bidirectional audio communication",
+                "Convai Editor UI implementation providing intuitive interface for AI character configuration and management"
             ],
-            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK/releases/tag/v3.5.1",
-            "targetPlatforms": [
-                "unreal"
-            ]
-        },
-        {
-            "id": "unreal-350",
-            "version": "3.5.0",
-            "date": "2025-09-15T08:00:00Z",
-            "changes": [
-                "Major update: Advanced emotion system with 16 distinct emotional states",
-                "Multi-character conversations with group dynamics and turn-taking",
-                "Enhanced lip sync using phoneme-accurate animation (ARKit compatible)",
-                "100+ new Blueprint nodes for advanced AI workflow customization",
-                "Nanite virtualized geometry support for high-poly character meshes (UE5.4+)",
-                "Lumen GI optimization reducing lighting calculation overhead by 35%",
-                "MetaHuman integration improvements with automatic facial rig setup",
-                "Mass AI compatibility for large-scale NPC crowd simulations",
-                "Sequencer integration for cinematic dialogue recording and playback"
-            ],
-            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK/releases/tag/v3.5.0",
-            "targetPlatforms": [
-                "unreal"
-            ]
-        },
-        {
-            "id": "unreal-340",
-            "version": "3.4.0",
-            "date": "2025-08-20T09:00:00Z",
-            "changes": [
-                "UE 5.3 official support with full feature compatibility",
-                "Enhanced Sequencer integration for cinematic dialogue sequences",
-                "Control Rig support for procedural facial animation authoring",
-                "Improved character state persistence with save game integration",
-                "Multiplayer replication improvements for networked AI characters",
-                "Blueprint macro library with common AI behavior patterns",
-                "Unreal Insights profiling hooks for performance analysis",
-                "Editor toolbar customization for quick access to AI tools"
-            ],
-            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK/releases/tag/v3.4.0",
-            "targetPlatforms": [
-                "unreal"
-            ]
-        },
-        {
-            "id": "unreal-330",
-            "version": "3.3.0",
-            "date": "2025-07-25T09:00:00Z",
-            "changes": [
-                "UE 5.2 compatibility verified across all major features",
-                "World Partition support for seamless large open-world integration",
-                "Spatial audio improvements with Atmos and Steam Audio compatibility",
-                "Blueprint debugging visualization for conversation state machines",
-                "Localization support for plugin UI elements (10 languages)",
-                "Crash reporting integration with Sentry for improved diagnostics",
-                "Command-line automation support for CI/CD pipelines",
-                "Improved asset cooking for faster packaging times"
-            ],
-            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK/releases/tag/v3.3.0",
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.1",
             "targetPlatforms": [
                 "unreal"
             ]
