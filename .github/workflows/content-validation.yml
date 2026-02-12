@@ -1,0 +1,112 @@
+name: Content Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+      - draft
+  push:
+    branches:
+      - main
+      - draft
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jsonschema
+
+      - name: Validate Content JSON
+        run: python tools/validate_content.py
+
+  canary:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run Canary Check
+        run: python tools/canary_check.py --result-json canary_result.json --warning-md canary_warnings.md
+
+      - name: Read Canary Result
+        id: canary_result
+        run: |
+          python - << 'PY'
+          import json
+          import os
+          with open("canary_result.json", "r", encoding="utf-8") as fh:
+              data = json.load(fh)
+          warnings_count = int(data.get("warnings_count", 0))
+          errors_count = int(data.get("errors_count", 0))
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+              out.write(f"warnings_count={warnings_count}\n")
+              out.write(f"errors_count={errors_count}\n")
+          PY
+
+      - name: Upload Canary Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-canary-report
+          path: |
+            canary_result.json
+            canary_warnings.md
+          if-no-files-found: ignore
+
+      - name: Create/Update Canary Issue
+        if: steps.canary_result.outputs.warnings_count != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+            const { owner, repo } = context.repo;
+            const title = "Content Canary Warning: jsDelivr divergence detected";
+            const body = fs.readFileSync("canary_warnings.md", "utf8");
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: "open",
+              labels: "content-canary",
+              per_page: 100
+            });
+
+            const existing = issues.find((issue) => issue.title === title);
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: existing.number,
+                body: `New canary warnings detected on run ${context.runNumber}.\n\n${body}`
+              });
+            } else {
+              await github.rest.issues.create({
+                owner,
+                repo,
+                title,
+                body,
+                labels: ["content-canary", "ops"]
+              });
+            }

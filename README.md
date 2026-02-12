@@ -21,6 +21,15 @@ Additional platform files will be added as Convai expands to more game engines.
 2. Files are automatically distributed
 3. Plugin users see the updates in their editor within minutes
 
+## Quality Gates
+
+This repository includes CI checks for production safety:
+
+- **Schema Validation** on PR/push for all feed JSON files
+- **Canary Monitoring** on `main` pushes to compare `raw.githubusercontent.com` vs `jsDelivr`
+
+If canary detects CDN divergence, CI emits warnings and opens/updates an issue labeled `content-canary`.
+
 ## License
 
 MIT License

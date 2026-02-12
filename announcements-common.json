@@ -1,7 +1,28 @@
 {
     "version": "1.0",
-    "lastUpdated": "2026-02-10T12:00:00Z",
+    "lastUpdated": "2026-02-12T14:20:00Z",
     "announcements": [
+        {
+            "id": "convai-e2e-content-branch-validation-2026-02-12",
+            "type": "update",
+            "title": "[TEST] E2E Content Branch Validation (2026-02-12)",
+            "description": "Temporary test announcement to validate raw-primary/fallback behavior in Unreal plugin.",
+            "url": "https://github.com/Conv-AI/convai-plugin-content/tree/test/content-feed-e2e-20260212",
+            "thumbnailUrl": "",
+            "date": "2026-02-12T14:20:00Z",
+            "priority": 0,
+            "tags": [
+                "test",
+                "e2e",
+                "unreal",
+                "content-feed"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
         {
             "id": "unreal-metahuman-conversation-lipsync-facial-animation-tutorial",
             "type": "youtube",
