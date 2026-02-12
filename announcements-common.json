@@ -1,12 +1,60 @@
 {
     "version": "1.0",
-    "lastUpdated": "2025-11-15T12:00:00Z",
+    "lastUpdated": "2026-02-10T12:00:00Z",
     "announcements": [
+        {
+            "id": "unreal-metahuman-conversation-lipsync-facial-animation-tutorial",
+            "type": "youtube",
+            "title": "MetaHumans with AI Powered Conversation, Lip Sync, and Facial Animation | Convai Unreal Engine Tutorial",
+            "description": "This tutorial demonstrates how to integrate Convai with MetaHuman avatars in Unreal Engine for natural real-time voice conversations with accurate lip sync and facial animation. Using the updated Convai Unreal Engine plugin and Convai's in-house neural animation system, NeuroSync, live audio is processed in real time to drive expressive facial performance across MetaHuman blend shapes. It covers end-to-end setup, from connecting a Convai character to configuring speech input and facial animation for production-ready interactive experiences.",
+            "url": "https://youtu.be/4fMCKkrfyaA",
+            "thumbnailUrl": "",
+            "date": "2026-02-10T10:00:00Z",
+            "priority": 1,
+            "tags": [
+                "unreal",
+                "metahuman",
+                "tutorial",
+                "lipsync",
+                "facial-animation",
+                "conversational-ai",
+                "neurosync"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "unreal-streaming-vision-handsfree-interactions-tutorial",
+            "type": "youtube",
+            "title": "AI Characters with Streaming Vision Input and Handsfree Interactions | Convai Unreal Engine Tutorial",
+            "description": "This video introduces the new Convai Unreal Engine plugin powered by Convai's latest Live Character API. Built on WebRTC for low-latency real-time interactions, it brings advanced capabilities including streaming vision input, multimodal knowledge, and long-term memory. Together, these features enable AI characters to see, understand, remember, and engage in richer context-aware conversations.",
+            "url": "https://youtu.be/HCgVlCKpDvg",
+            "thumbnailUrl": "",
+            "date": "2025-11-25T10:00:00Z",
+            "priority": 2,
+            "tags": [
+                "unreal",
+                "tutorial",
+                "vision",
+                "handsfree",
+                "webrtc",
+                "multimodal",
+                "long-term-memory"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
         {
             "id": "unity-beta-plugin-video",
             "type": "youtube",
-            "title": "Unity Beta Plugin Video Released",
-            "description": "Watch our new Unity Beta Plugin showcase video featuring vision-based conversational AI characters, mixed reality (MR) capabilities, and WebRTC integration. Discover the latest features and see how to build immersive AI experiences in Unity",
+            "title": "Build Vision based Conversational AI Characters | Convai Unity Tutorial",
+            "description": "In this video, we introduce the new Convai Unity Plugin, powered by Convai's latest Live Character API. Built on WebRTC, it enables low-latency real-time interactions and introduces powerful capabilities including real-time vision input, multimodal knowledge, and long-term memory. Together, these features allow AI characters to see, understand, remember, and engage in rich, context-aware conversations.",
             "url": "https://youtu.be/cEctYXc5Pe8",
             "thumbnailUrl": "",
             "date": "2025-11-14T10:00:00Z",
