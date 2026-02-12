@@ -1,17 +1,124 @@
 {
     "version": "1.0",
-    "lastUpdated": "2025-11-15T12:00:00Z",
+    "lastUpdated": "2026-02-11T12:00:00Z",
     "changelogs": [
+        {
+            "id": "unreal-400-beta10",
+            "version": "4.0.0-beta.10",
+            "date": "2026-02-11T10:00:00Z",
+            "changes": [
+                "Resolved DLL loading issues to improve plugin startup reliability",
+                "Fixed a crash in the Convai Dashboard",
+                "Added full support for Blueprint-only Unreal projects"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.10",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta9",
+            "version": "4.0.0-beta.9",
+            "date": "2026-02-10T10:00:00Z",
+            "changes": [
+                "Improved character interruption handling for smoother conversational turn-taking",
+                "Enhanced lip sync accuracy for more natural facial animation",
+                "Added connection state APIs to ConvaiSubsystem and ConvaiChatbotComponent"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.9",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta7",
+            "version": "4.0.0-beta.7",
+            "date": "2026-01-21T10:00:00Z",
+            "changes": [
+                "Fixed an issue that corrupted specific transcription characters"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.7",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta6",
+            "version": "4.0.0-beta.6",
+            "date": "2026-01-17T10:00:00Z",
+            "changes": [
+                "Added ARKit blendshape lip sync support",
+                "Updated ConvaiFaceSyncComponent default LipSyncMode to BS_MHA (MetaHuman)",
+                "Added RequiresPrecomputedFaceData to ConvaiConnectionInterface",
+                "Fixed conditional blendshape selection logic to correctly use ARKit naming"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.6",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta5",
+            "version": "4.0.0-beta.5",
+            "date": "2026-01-15T10:00:00Z",
+            "changes": [
+                "Updated BlendShapesNames to the new ARKit naming convention"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.5",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta4",
+            "version": "4.0.0-beta.4",
+            "date": "2026-01-10T10:00:00Z",
+            "changes": [
+                "Implemented bulk NeuroSync blendshape handling with detailed stats logging",
+                "Added audio frame tracking and improved voice handling in ConvaiAudioStreamer and ConvaiChatbotComponent",
+                "Implemented blendshape frame count verification and logging to improve analytics visibility",
+                "Added end-user ID and unique device ID support",
+                "Fixed voice playback overlap by stopping current voice output when new audio starts",
+                "Removed redundant checks in StopVoice and stopped broadcasting blendshape events on StopLipSync",
+                "Fixed ConvaiLipSync initialization validation in GetLipSyncMode",
+                "Removed an unnecessary CalculateStartingTime call in ConvaiApplyPrecomputedFacialAnimation",
+                "Added MetaHumanCtrlNames support",
+                "Fixed editor freezing issues",
+                "Added NeuroSync blendshape handling to the face sync component",
+                "Fixed Linux library linking issues",
+                "Increased audio content check delay from 0.3s to 0.5s for improved stability",
+                "Fixed an issue where audio did not play when MinBufferDuration exceeded received audio length",
+                "Applied vision pipeline optimizations",
+                "Set a default value for MinBufferDuration"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.4",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta3",
+            "version": "4.0.0-beta.3",
+            "date": "2025-11-26T10:00:00Z",
+            "changes": [
+                "Added Unreal Engine 5.7 support",
+                "Added support for Blueprint-only projects"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.3",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
         {
             "id": "unreal-400-beta2",
             "version": "4.0.0-beta.2",
             "date": "2025-11-15T10:00:00Z",
             "changes": [
-                "Added Editor Login Screen and Dashboard for seamless authentication and project management",
-                "Enhanced audio quality with improved echo cancellation and noise reduction algorithms",
-                "Initial viseme-based lip sync support using FaceSync component for more accurate facial animations",
-                "Fixed F10 Settings menu functionality and improved UI responsiveness",
-                "Editor UI improvements with enhanced navigation, better visual feedback, and streamlined workflows"
+                "Added Editor Login Screen and Dashboard for streamlined authentication and project management",
+                "Improved echo cancellation and noise reduction for better audio quality",
+                "Added initial viseme-based lip sync support through ConvaiFaceSyncComponent",
+                "Added gamma correction improvements to vision processing",
+                "Fixed issues with the F10 Settings menu"
             ],
             "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.2",
             "targetPlatforms": [
@@ -21,10 +128,9 @@
         {
             "id": "unreal-400-beta1",
             "version": "4.0.0-beta.1",
-            "date": "2025-11-06T10:00:00Z",
+            "date": "2025-11-05T10:00:00Z",
             "changes": [
-                "Initial WebRTC integration for real-time bidirectional audio communication",
-                "Convai Editor UI implementation providing intuitive interface for AI character configuration and management"
+                "Introduced initial WebRTC integration for real-time bidirectional communication"
             ],
             "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.1",
             "targetPlatforms": [
