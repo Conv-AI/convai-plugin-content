@@ -1,7 +1,59 @@
 {
     "version": "1.0",
-    "lastUpdated": "2026-02-10T12:00:00Z",
+    "lastUpdated": "2026-03-11T12:00:00Z",
     "announcements": [
+        {
+            "id": "unreal-plugin-quick-setup-tutorial",
+            "type": "youtube",
+            "title": "Real-Time Conversational AI Characters in Unreal Engine | Convai Plugin Quick Setup Tutorial",
+            "description": "In this quick setup guide, we show you how to add conversational AI to any Unreal Engine project using Convai's updated plugin, now available on the FAB Marketplace. The plugin works across the full spectrum of avatar setups, including MetaHumans, Reallusion characters, custom avatars, and fully disembodied AI. For characters with facial rigs, NeuroSync, Convai's in-house AI model, drives real-time lip sync and facial animation, and the WebRTC-powered Live Character API ensures low-latency, context-aware interactions.",
+            "url": "https://youtu.be/n-UG3nmMeZQ",
+            "thumbnailUrl": "",
+            "date": "2026-03-02T10:00:00Z",
+            "priority": 1,
+            "tags": [
+                "unreal",
+                "tutorial",
+                "quick-setup",
+                "metahuman",
+                "reallusion",
+                "lipsync",
+                "facial-animation",
+                "neurosync",
+                "webrtc",
+                "fab-marketplace"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "unreal-reallusion-cc5-lipsync-facial-animation-tutorial",
+            "type": "youtube",
+            "title": "Real-Time AI Conversations & Facial Animation for Reallusion Characters | Convai UE Tutorial",
+            "description": "In this tutorial, we show you how to enable real-time lip sync and facial animation for Reallusion Character Creator 5 (CC5) avatars using Convai's Unreal Engine plugin. By combining high-fidelity Reallusion characters with Convai's conversational AI pipeline, you can create fully interactive avatars that see, hear, and speak with incredible realism. The integration is powered by NeuroSync, our in-house AI model that analyzes audio in real-time to produce synchronized blend shapes. This allows your character to deliver nuanced facial expressions and accurate lip sync that adapts dynamically to AI-generated voice output. We will walk you through the entire workflow: from exporting your avatar with the correct settings in Reallusion's Character Creator to configuring the \"Chatbot\" and \"FaceSync\" components inside Unreal Engine. By the end of this video, you will have a conversational lipsyncing Reallusion character ready for training simulations, interactive NPCs, XR experiences, and brand avatars.",
+            "url": "https://youtu.be/nyPNP-S92QI",
+            "thumbnailUrl": "",
+            "date": "2026-02-19T10:00:00Z",
+            "priority": 1,
+            "tags": [
+                "unreal",
+                "reallusion",
+                "cc5",
+                "tutorial",
+                "lipsync",
+                "facial-animation",
+                "conversational-ai",
+                "neurosync"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
         {
             "id": "unreal-metahuman-conversation-lipsync-facial-animation-tutorial",
             "type": "youtube",

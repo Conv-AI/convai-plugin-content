@@ -3,6 +3,38 @@
     "lastUpdated": "2026-02-11T12:00:00Z",
     "changelogs": [
         {
+            "id": "unreal-400-beta12",
+            "version": "4.0.0-beta.12",
+            "date": "2026-03-10T10:00:00Z",
+            "changes": [
+                "Deprecated legacy ConvaiBaseCharacter and ConvaiBasePlayer Blueprint classes",
+                "Added LLM lifecycle events (OnLLMStarted, OnLLMStopped) to ConvaiChatbotComponent",
+                "Added support for character emotions",
+                "Added STT toggle support for enabling and disabling speech-to-text at runtime",
+                "Improved lip sync accuracy at the end of responses",
+                "Fixed lip sync desync caused by carrying over frames from previous responses",
+                "Fixed a PIE crash occurring when recording audio while initiating a new connection",
+                "Updated minimum buffer duration to 0.2 seconds for improved audio stability",
+                "Enhanced GetTestCharacterID to trim whitespace and support command line overrides"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.12",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta11",
+            "version": "4.0.0-beta.11",
+            "date": "2026-02-19T10:00:00Z",
+            "changes": [
+                "Improved compatibility with CC5 Reallusion characters"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.11",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
             "id": "unreal-400-beta10",
             "version": "4.0.0-beta.10",
             "date": "2026-02-11T10:00:00Z",
