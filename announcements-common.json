@@ -1,124 +1,284 @@
 {
     "version": "1.0",
-    "lastUpdated": "2026-03-11T12:00:00Z",
+    "lastUpdated": "2026-06-04T09:18:00Z",
     "announcements": [
         {
-            "id": "unreal-plugin-quick-setup-tutorial",
-            "type": "youtube",
-            "title": "Real-Time Conversational AI Characters in Unreal Engine | Convai Plugin Quick Setup Tutorial",
-            "description": "In this quick setup guide, we show you how to add conversational AI to any Unreal Engine project using Convai's updated plugin, now available on the FAB Marketplace. The plugin works across the full spectrum of avatar setups, including MetaHumans, Reallusion characters, custom avatars, and fully disembodied AI. For characters with facial rigs, NeuroSync, Convai's in-house AI model, drives real-time lip sync and facial animation, and the WebRTC-powered Live Character API ensures low-latency, context-aware interactions.",
-            "url": "https://youtu.be/n-UG3nmMeZQ",
-            "thumbnailUrl": "",
-            "date": "2026-03-02T10:00:00Z",
+            "id": "forum-tutorial-5480",
+            "type": "forum",
+            "title": "Vision Based Conversational AI In Smart Glasses and XR Headsets | Convai Live API MR Demo",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/vision-based-conversational-ai-in-smart-glasses-and-xr-headsets-convai-live-api-mr-demo/5480",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/4/4e8721c54f2b84aa84aaf73793ff36e4729c9048_2_1024x576.jpeg",
+            "date": "2025-11-22T16:21:56.914Z",
             "priority": 1,
-            "tags": [
-                "unreal",
-                "tutorial",
-                "quick-setup",
-                "metahuman",
-                "reallusion",
-                "lipsync",
-                "facial-animation",
-                "neurosync",
-                "webrtc",
-                "fab-marketplace"
-            ],
-            "targetPlatforms": [
-                "all"
-            ],
-            "minVersion": "",
-            "maxVersion": ""
-        },
-        {
-            "id": "unreal-reallusion-cc5-lipsync-facial-animation-tutorial",
-            "type": "youtube",
-            "title": "Real-Time AI Conversations & Facial Animation for Reallusion Characters | Convai UE Tutorial",
-            "description": "In this tutorial, we show you how to enable real-time lip sync and facial animation for Reallusion Character Creator 5 (CC5) avatars using Convai's Unreal Engine plugin. By combining high-fidelity Reallusion characters with Convai's conversational AI pipeline, you can create fully interactive avatars that see, hear, and speak with incredible realism. The integration is powered by NeuroSync, our in-house AI model that analyzes audio in real-time to produce synchronized blend shapes. This allows your character to deliver nuanced facial expressions and accurate lip sync that adapts dynamically to AI-generated voice output. We will walk you through the entire workflow: from exporting your avatar with the correct settings in Reallusion's Character Creator to configuring the \"Chatbot\" and \"FaceSync\" components inside Unreal Engine. By the end of this video, you will have a conversational lipsyncing Reallusion character ready for training simulations, interactive NPCs, XR experiences, and brand avatars.",
-            "url": "https://youtu.be/nyPNP-S92QI",
-            "thumbnailUrl": "",
-            "date": "2026-02-19T10:00:00Z",
-            "priority": 1,
-            "tags": [
-                "unreal",
-                "reallusion",
-                "cc5",
-                "tutorial",
-                "lipsync",
-                "facial-animation",
-                "conversational-ai",
-                "neurosync"
-            ],
-            "targetPlatforms": [
-                "all"
-            ],
-            "minVersion": "",
-            "maxVersion": ""
-        },
-        {
-            "id": "unreal-metahuman-conversation-lipsync-facial-animation-tutorial",
-            "type": "youtube",
-            "title": "MetaHumans with AI Powered Conversation, Lip Sync, and Facial Animation | Convai Unreal Engine Tutorial",
-            "description": "This tutorial demonstrates how to integrate Convai with MetaHuman avatars in Unreal Engine for natural real-time voice conversations with accurate lip sync and facial animation. Using the updated Convai Unreal Engine plugin and Convai's in-house neural animation system, NeuroSync, live audio is processed in real time to drive expressive facial performance across MetaHuman blend shapes. It covers end-to-end setup, from connecting a Convai character to configuring speech input and facial animation for production-ready interactive experiences.",
-            "url": "https://youtu.be/4fMCKkrfyaA",
-            "thumbnailUrl": "",
-            "date": "2026-02-10T10:00:00Z",
-            "priority": 1,
-            "tags": [
-                "unreal",
-                "metahuman",
-                "tutorial",
-                "lipsync",
-                "facial-animation",
-                "conversational-ai",
-                "neurosync"
-            ],
-            "targetPlatforms": [
-                "all"
-            ],
-            "minVersion": "",
-            "maxVersion": ""
-        },
-        {
-            "id": "unreal-streaming-vision-handsfree-interactions-tutorial",
-            "type": "youtube",
-            "title": "AI Characters with Streaming Vision Input and Handsfree Interactions | Convai Unreal Engine Tutorial",
-            "description": "This video introduces the new Convai Unreal Engine plugin powered by Convai's latest Live Character API. Built on WebRTC for low-latency real-time interactions, it brings advanced capabilities including streaming vision input, multimodal knowledge, and long-term memory. Together, these features enable AI characters to see, understand, remember, and engage in richer context-aware conversations.",
-            "url": "https://youtu.be/HCgVlCKpDvg",
-            "thumbnailUrl": "",
-            "date": "2025-11-25T10:00:00Z",
-            "priority": 2,
-            "tags": [
-                "unreal",
-                "tutorial",
-                "vision",
-                "handsfree",
-                "webrtc",
-                "multimodal",
-                "long-term-memory"
-            ],
-            "targetPlatforms": [
-                "all"
-            ],
-            "minVersion": "",
-            "maxVersion": ""
-        },
-        {
-            "id": "unity-beta-plugin-video",
-            "type": "youtube",
-            "title": "Build Vision based Conversational AI Characters | Convai Unity Tutorial",
-            "description": "In this video, we introduce the new Convai Unity Plugin, powered by Convai's latest Live Character API. Built on WebRTC, it enables low-latency real-time interactions and introduces powerful capabilities including real-time vision input, multimodal knowledge, and long-term memory. Together, these features allow AI characters to see, understand, remember, and engage in rich, context-aware conversations.",
-            "url": "https://youtu.be/cEctYXc5Pe8",
-            "thumbnailUrl": "",
-            "date": "2025-11-14T10:00:00Z",
-            "priority": 2,
             "tags": [
                 "unity",
-                "beta",
-                "video",
-                "vision",
-                "mr",
-                "webrtc",
-                "plugin"
+                "featured",
+                "tutorials"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-5481",
+            "type": "forum",
+            "title": "Build Vision based Conversational AI Characters | Convai Unity Tutorial",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/build-vision-based-conversational-ai-characters-convai-unity-tutorial/5481",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/d/dd22e5dc54bcf38c834b38241bd60da942ab19d0_2_1024x576.jpeg",
+            "date": "2025-11-22T16:24:28.958Z",
+            "priority": 1,
+            "tags": [
+                "unity",
+                "featured",
+                "tutorials"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-5503",
+            "type": "forum",
+            "title": "AI Characters with Streaming Vision Input and Handsfree Interactions | Convai Unreal Engine Tutorial",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/ai-characters-with-streaming-vision-input-and-handsfree-interactions-convai-unreal-engine-tutorial/5503",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/4/4056d9412bd0377454e701e8762cc5a80475c8b4_2_1024x576.jpeg",
+            "date": "2025-11-25T16:09:41.508Z",
+            "priority": 1,
+            "tags": [
+                "unreal-engine",
+                "featured",
+                "tutorials"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-5803",
+            "type": "forum",
+            "title": "MetaHumans with AI powered Conversation, Lip Sync & Facial Animation | Convai Unreal Engine Tutorial",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/metahumans-with-ai-powered-conversation-lip-sync-facial-animation-convai-unreal-engine-tutorial/5803",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/4/4619c16815de3a0deac2b866d80c7ad7c8bc10a3_2_1024x576.jpeg",
+            "date": "2026-02-19T11:06:50.064Z",
+            "priority": 1,
+            "tags": [
+                "unreal-engine",
+                "featured",
+                "tutorials"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-5804",
+            "type": "forum",
+            "title": "Reallusion Avatars with Conversational AI, Real-time Lipsync & Facial Animation | Convai UE Tutorial",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/reallusion-avatars-with-conversational-ai-real-time-lipsync-facial-animation-convai-ue-tutorial/5804",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/a/a8f997d2398f258614d801987caf222dc923a478_2_1024x576.jpeg",
+            "date": "2026-02-19T11:15:37.894Z",
+            "priority": 1,
+            "tags": [
+                "unreal-engine",
+                "featured",
+                "tutorials",
+                "reallusion"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-6040",
+            "type": "forum",
+            "title": "Demo: Real-Time Lip Sync & AI Voice Interaction for 3D Avatars (Unity)",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/demo-real-time-lip-sync-ai-voice-interaction-for-3d-avatars-unity/6040",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/a/a324ef8e57bf2e179b22363f00315071deaf6bd4_2_1024x576.jpeg",
+            "date": "2026-04-08T17:31:18.387Z",
+            "priority": 1,
+            "tags": [
+                "unity",
+                "lipsync",
+                "featured"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-6188",
+            "type": "forum",
+            "title": "Convai's Dynamic Context in UE: Build AI Characters That React To Virtual World Events in Real-Time",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/convai-s-dynamic-context-in-ue-build-ai-characters-that-react-to-virtual-world-events-in-real-time/6188",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/1/1e2d774825f77f24f58c621e58b8a14f1fb3240a_2_1024x576.jpeg",
+            "date": "2026-05-15T10:56:42.763Z",
+            "priority": 1,
+            "tags": [
+                "unreal-engine",
+                "featured",
+                "dynamic-context"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-6189",
+            "type": "forum",
+            "title": "From Dialogue to Action: Create Scene-Aware AI Characters That Act AND React | Convai Unreal Engine",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/from-dialogue-to-action-create-scene-aware-ai-characters-that-act-and-react-convai-unreal-engine/6189",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/4/4ed0f598f8477e9cdcad27be1ccbb12a5ff97da1_2_1024x576.jpeg",
+            "date": "2026-05-15T11:04:58.815Z",
+            "priority": 1,
+            "tags": [
+                "unreal-engine",
+                "actions",
+                "featured"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-6190",
+            "type": "forum",
+            "title": "Demo: It Sees, Navigates, Converses & Acts: Spatially Aware AI NPC Demo in XR | Powered by Convai",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/demo-it-sees-navigates-converses-acts-spatially-aware-ai-npc-demo-in-xr-powered-by-convai/6190",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/6/6330bc19147ac9acd42c24ebc083e1d3bf76a8e9_2_1024x576.jpeg",
+            "date": "2026-05-15T11:11:21.709Z",
+            "priority": 1,
+            "tags": [
+                "unreal-engine",
+                "actions",
+                "featured",
+                "vision"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-6192",
+            "type": "forum",
+            "title": "Low-Latency 3D AI Characters in Unity with Real-Time Lip Sync | Convai Unity Tutorial",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/low-latency-3d-ai-characters-in-unity-with-real-time-lip-sync-convai-unity-tutorial/6192",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/9/91e4ca90721c0172f7c97871b69acc4fb926c9cc_2_1024x576.jpeg",
+            "date": "2026-05-15T11:16:30.447Z",
+            "priority": 1,
+            "tags": [
+                "unity",
+                "featured",
+                "tutorials"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-6193",
+            "type": "forum",
+            "title": "How to Build Mixed Reality AI Characters in Unity with Convai on Meta Quest",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/how-to-build-mixed-reality-ai-characters-in-unity-with-convai-on-meta-quest/6193",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/f/f41f22c404efcff83f2fcc4fd2acaa89a07382d9_2_1024x576.jpeg",
+            "date": "2026-05-15T11:29:19.798Z",
+            "priority": 1,
+            "tags": [
+                "unity",
+                "featured",
+                "tutorials",
+                "mr"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-6194",
+            "type": "forum",
+            "title": "Set Up Convai Analytics MCP with AI Agents Like Claude in Under 60 Seconds",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/set-up-convai-analytics-mcp-with-ai-agents-like-claude-in-under-60-seconds/6194",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/2/2d92d71c9dfe48774e66c2918e26379c044efe18_2_1024x576.jpeg",
+            "date": "2026-05-15T11:34:03.497Z",
+            "priority": 1,
+            "tags": [
+                "core-api",
+                "featured",
+                "tutorials"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-6239",
+            "type": "forum",
+            "title": "Build 3D Conversational AI Characters for Virtual Reality Projects in Unity with Convai",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/build-3d-conversational-ai-characters-for-virtual-reality-projects-in-unity-with-convai/6239",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/6/62e0cd2db8f290287521fc3168c32c6bb478fa2e_2_1024x576.jpeg",
+            "date": "2026-05-25T22:14:29.191Z",
+            "priority": 1,
+            "tags": [
+                "unity",
+                "vr",
+                "featured",
+                "tutorials"
+            ],
+            "targetPlatforms": [
+                "all"
+            ],
+            "minVersion": "",
+            "maxVersion": ""
+        },
+        {
+            "id": "forum-tutorial-6240",
+            "type": "forum",
+            "title": "Trigger Parameterized Actions with Voice Commands in Unreal Engine | Convai Tutorial",
+            "description": "Read this tutorial on the Convai Developer Forum.",
+            "url": "https://forum.convai.com/t/trigger-parameterized-actions-with-voice-commands-in-unreal-engine-convai-tutorial/6240",
+            "thumbnailUrl": "https://canada1.discourse-cdn.com/flex004/uploads/convai/optimized/2X/e/e963eac9a8de3c94b643a9fb1e523af055091d36_2_1024x576.jpeg",
+            "date": "2026-05-25T22:16:33.059Z",
+            "priority": 1,
+            "tags": [
+                "unreal-engine",
+                "actions",
+                "featured"
             ],
             "targetPlatforms": [
                 "all"
