@@ -1,7 +1,162 @@
 {
     "version": "1.0",
-    "lastUpdated": "2026-02-11T12:00:00Z",
+    "lastUpdated": "2026-06-04T09:18:00Z",
     "changelogs": [
+        {
+            "id": "unreal-400-beta21",
+            "version": "4.0.0-beta.21",
+            "date": "2026-05-25T10:34:00Z",
+            "changes": [
+                "Overhauled the bundled MetaHuman animation set for higher-quality character presentation",
+                "Added gesture and pointing animations that can be triggered automatically by LLM-issued actions",
+                "Added Convai Object Component support for tagging actors and exposing their properties as live chatbot context",
+                "Added gaze-driven attention so the actor under the player's gaze becomes the active object in attention, including silhouette highlighting and an on-screen cursor",
+                "Added proximity-driven state reporting so object components can tell chatbots when they are reachable from the chatbot pawn",
+                "Added replicated PointAtTarget support alongside LookAtTarget on the chatbot component",
+                "Added a Create Convai Action Handler Blueprint graph context action for scaffolding typed action handlers",
+                "Added a Setup Convai Pawn Movement content-browser action for applying Convai navigation defaults to pawn Blueprint assets",
+                "Added component and socket targeting with per-entry movement overrides for actions",
+                "Improved action completion so handlers can wait for bot speech to finish, post dynamic-context events, or abort unrecoverable sequences cleanly",
+                "Added fuzzy matching for enum and choice action parameters to tolerate minor LLM spelling variations",
+                "Added voice activity detection parameters to project settings and the connect request",
+                "Added Convai authentication caching to avoid unnecessary re-authentication on subsequent connects",
+                "Added GetBodyAndFaceSkeletalMeshComponents for resolving MetaHuman and CC5 character rigs",
+                "Improved tail-of-utterance audio handling to reduce clipping on soft trailing consonants",
+                "Improved lip sync resilience with a starvation fallback when animation frames temporarily stop arriving",
+                "Enabled actions by default in the chatbot environment",
+                "Updated action parsing to use brace-delimited action names for more robust response handling",
+                "Fixed microphone hot-swap behavior so switching devices mid-session no longer requires restarting the stream",
+                "Fixed an Android crash during application shutdown",
+                "Fixed Unreal Engine 5.0, 5.4, 5.5, and 5.7 compilation and compatibility issues across supported engine versions",
+                "Disabled the ConvaiEditor module on Unreal Engine 5.1 and earlier where the required property-binding editor feature is unavailable",
+                "Regenerated the gaze-highlight material under Unreal Engine 5.0 so the asset loads correctly across supported engine versions"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.21",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta19",
+            "version": "4.0.0-beta.19",
+            "date": "2026-05-01T07:24:00Z",
+            "changes": [
+                "Refactored chatbot environment storage from the legacy UConvaiEnvironment UObject model to the structured FConvaiEnvironmentData data model",
+                "Added granular chatbot APIs for adding, removing, and clearing environment objects, characters, and actions",
+                "Added debounced update-scene-metadata flushing with an advanced immediate-flush option for time-critical updates",
+                "Split the legacy MainCharacter concept into ConversationPartner for replicated scene awareness and LookAtTarget for animation targeting",
+                "Added automatic conversation partner assignment from the first registered Convai Player Component or player pawn",
+                "Added SetObjectInAttention for registering and updating the active object in attention through the dynamic-context pipeline",
+                "Added an Enable Actions chatbot toggle and seeded the default action set with Move To, Follow, Stop Moving, and Wait For",
+                "Restored deprecated UConvaiEnvironment and UConvaiActionContext shims so older Blueprint graphs continue compiling with deprecation warnings",
+                "Introduced typed Actions V2 templates with structured parameters for references, strings, numbers, booleans, enums, choices, and connectors",
+                "Added a live two-way editable action wire-format preview that syncs structured action fields and rendered strings",
+                "Unified action results around typed parameter maps with best-effort string, number, boolean, reference, and byte-value accessors",
+                "Added Blueprint-pure helpers for retrieving, checking, and converting action parameters",
+                "Extended HandleActionCompletion with optional dynamic-context event text and response control",
+                "Added AbortActionSequence for clearing unrecoverable action queues and allowing the chatbot to replan",
+                "Removed the legacy EnableNewActionSystem toggle so the action queue path is always active",
+                "Improved action target parsing for numeric and quoted-text parameters",
+                "Added Setup Convai Pawn Movement as a content-browser action for Actor, Pawn, and Character Blueprint assets",
+                "Configured Actor-derived Blueprints to reparent to APawn and receive FloatingPawnMovement with Convai-tuned defaults",
+                "Configured Pawn Blueprints to receive FloatingPawnMovement when missing",
+                "Configured Character Blueprints to tune their existing CharacterMovementComponent and navigation defaults"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.19",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta18",
+            "version": "4.0.0-beta.18",
+            "date": "2026-04-24T16:33:00Z",
+            "changes": [
+                "Added Android packaging support",
+                "Added dynamic-context batching and logging for chatbot interactions to reduce redundant updates",
+                "Improved lip sync stability with starvation blending and playable-frame validation",
+                "Added command-line overrides for lip sync animation parameters and simulation freeze behavior",
+                "Added custom parameter handling and client version retrieval to ConvaiUtils",
+                "Added reset-idle-timer and user-idle-warning support",
+                "Enhanced FaceSync Animation Node component resolution to include the parent actor when searching for UConvaiChatbotComponent",
+                "Renamed the RunLLM parameter to ShouldRespond for clearer context update APIs",
+                "Streamlined context state updates to consistently use the debounce window",
+                "Updated LipSyncTimeOffset to 200ms for improved audio and animation alignment",
+                "Updated ContextAggregationDelay from 0.3 seconds to 0.5 seconds for more stable dynamic-context aggregation",
+                "Refactored narrative trigger handling to simplify context processing"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.18",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta17",
+            "version": "4.0.0-beta.17",
+            "date": "2026-04-13T15:46:00Z",
+            "changes": [
+                "Optimized MetaHuman Face Animation Blueprint lip sync computation performance",
+                "Improved audio playback time estimation and removed deprecated FSoundSource caching",
+                "Improved audio finish detection with tolerance for floating-point edge cases that could prevent playback from completing",
+                "Added debug performance timing statistics for audio streamer and face sync components",
+                "Added detailed audio playback debug logging for playback time, wall-clock time, byte-based time, remaining duration, and ring-buffer state",
+                "Improved audio capture cleanup to release resources safely during component destruction and end play",
+                "Fixed potential dangling async task references by switching to weak pointers",
+                "Fixed re-entrant callbacks during Convai client disconnection",
+                "Fixed a crash caused by cross-object delegate cleanup during BeginDestroy for chatbot and player components",
+                "Fixed player transcriptions not being appended correctly",
+                "Added emotions provider plumbing"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.17",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta15",
+            "version": "4.0.0-beta.15",
+            "date": "2026-04-05T00:46:00Z",
+            "changes": [
+                "Fixed slow lip sync data reception to improve facial animation responsiveness"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.15",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta14",
+            "version": "4.0.0-beta.14",
+            "date": "2026-03-31T04:48:00Z",
+            "changes": [
+                "Added Update Context functionality",
+                "Updated OutputFPS to 60 for improved lip sync output quality",
+                "Improved lip sync audio handling and removed unused variables",
+                "Improved audio playback time calculation accuracy and simplified the voice playback data flow"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.14",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
+        {
+            "id": "unreal-400-beta13",
+            "version": "4.0.0-beta.13",
+            "date": "2026-03-16T19:08:00Z",
+            "changes": [
+                "Added a connection indicator",
+                "Fixed attendee disconnect state notification handling",
+                "Fixed the editor UI so it shows the changelog only for the installed plugin version",
+                "Improved connection manager reliability and state handling",
+                "Fixed audio transmission when the connection is in an orphan state",
+                "Improved server event dispatching",
+                "Enhanced logging for easier debugging"
+            ],
+            "url": "https://github.com/Conv-AI/Convai-UnrealEngine-SDK-V4/releases/tag/4.0.0-beta.13",
+            "targetPlatforms": [
+                "unreal"
+            ]
+        },
         {
             "id": "unreal-400-beta12",
             "version": "4.0.0-beta.12",
